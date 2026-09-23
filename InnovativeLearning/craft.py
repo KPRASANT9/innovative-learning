@@ -9,6 +9,8 @@ that acts on other verbs. Climb only as far as the question.
 The pictures are the framework. LAYER_LADDER is the descent from
 higher order down to the value. ELEMENT_MAP is every core element
 in its layer. USE_DIAGRAM is how you choose, with ease.
+The reading form is Python.md. The five questions are refined there,
+at the top.
 
                  [ L5: HIGHER ORDER ]
                             |
@@ -80,7 +82,7 @@ LAYERS: tuple[Layer, ...] = (
     Layer(
         1,
         "DATA TYPES",
-        "What is this one value?",
+        "What type can carry what this value really is?",
         "a raw atom crossing the edge of the program",
         "int, bool, float, complex, Decimal, Fraction, str, bytes, None, datetime",
         "the question is about that single value",
@@ -89,7 +91,7 @@ LAYERS: tuple[Layer, ...] = (
     Layer(
         2,
         "DATA STRUCTURES",
-        "How will these values be asked for?",
+        "How will you reach one value among many?",
         "many values, and a way you intend to reach them",
         "list, tuple, range, dict, set, frozenset, deque, heap",
         "one shape answers the access, and only this place uses it",
@@ -98,7 +100,7 @@ LAYERS: tuple[Layer, ...] = (
     Layer(
         3,
         "ADT OPERATIONS",
-        "Which verb does that shape allow?",
+        "Which operation is lawful for that shape?",
         "a structure and one question to ask it",
         "index, slice, get, add, push, pop, union, heappop, unpack, iterate",
         "the verb is used in one place",
@@ -107,7 +109,7 @@ LAYERS: tuple[Layer, ...] = (
     Layer(
         4,
         "THE BOUNDARY",
-        "Who is allowed to see the container?",
+        "Should callers see the container, or only the operation's name?",
         "a verb that more than one caller needs",
         "a function, a protocol, a dataclass, a raised error, a with-block",
         "callers can depend on the name, and the verb is not being lifted across a whole collection",
@@ -116,7 +118,7 @@ LAYERS: tuple[Layer, ...] = (
     Layer(
         5,
         "HIGHER ORDER",
-        "Does this verb apply to many values, or to other verbs?",
+        "Does this operation apply to every value, or to another operation?",
         "a verb that repeats across items, or a verb whose subject is another verb",
         "map, filter, reduce, comprehension, generator, partial, compose, decorator",
         "the lift itself is the whole question",
