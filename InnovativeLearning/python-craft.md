@@ -1,8 +1,5 @@
 # Python: The Craft of the Language
 
-This is the reading form of `craft.py`, and the sibling of `SQL.md`.
-SQL asks how a question moves through data. This note asks how a Python program stays honest while it answers.
-
 Climb only as far as the question.
 
 ```text
@@ -328,7 +325,7 @@ Both ends, each in constant time.
 | pop | `d.pop()` | Shrink at the right. |
 | popleft | `d.popleft()` | Shrink at the left. |
 
-### mapping
+### mapping (Dict))
 
 Reach a value by a hashable key.
 
@@ -479,5 +476,3 @@ Name the need in plain words. `craft.choose` returns the same row. The word `map
 
 Extend a level, or read the result of a named operation. Leave Level 1 closed.
 A wrong type makes every later operation a precise-looking lie. A second caller is the moment an operation earns a name. A repeated operation is the moment it earns a lift.
-
-`python InnovativeLearning/craft.py` prints this map and checks that the pictures, the types, and the laws still agree.
